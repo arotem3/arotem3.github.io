@@ -4,12 +4,12 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a Ph.D. student at Virginia Tech researching numerical methods for partial differential equations and high performance computing.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Numerical PDEs:** finite element methods, finite difference methods, WaveHoltz, domain decomposition.
+- **High Performance Computing:** GPU and many distributed algorithms and implementation in C++.
 
 ## News
 
@@ -20,4 +20,4 @@ I am a Ph.D. student at ...
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+<!-- {% include_relative _includes/services.md %} -->
