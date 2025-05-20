@@ -1,0 +1,19 @@
+main:
+
+  - title: "CuDDHelmholtz"
+    description: "Domain decomposition solver for the Helmholtz equation implemented in CUDA."
+    language: C++, CUDA
+    code: https://github.com/arotem3/CuDDHelmholtz
+    notes: 3D solver in progress.
+
+  - title: "GenDiL"
+    description: "GenDiL is a header-only C++ library providing flexible and efficient discretization tools for partial differential equations (PDEs) through a generic programming approach. The library aims to bring advanced mathematical concepts into practical use, leveraging modern C++ for high-performance scientific computing."
+    language: C++, CUDA
+    code: https://github.com/GenDiL/GenDiL
+    notes: Maintainer
+
+  - title: "mfem"
+    description: "MFEM is a modular parallel C++ library for finite element methods. Its goal is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to supercomputers."
+    language: C++, CUDA
+    code: https://github.com/mfem/mfem
+    notes: Contributor (implemented matrix-free SIPDG Diffusion operator)
