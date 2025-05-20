@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: gallery
 title: "Gallery"
 permalink: /gallery/
 ---
 
-<h2>Simulation Visualizations</h2>
+<h2>Gallery</h2>
 
 <div class="image-grid">
   {% for image in site.data.gallery %}
