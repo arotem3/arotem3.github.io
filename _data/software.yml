@@ -19,7 +19,7 @@ main:
     notes: Contributor (implemented matrix-free SIPDG Diffusion operator)
 
   - title: "WaveDG"
-    description: "Discontinuous Galerkin implementation of the acoustic wave equation."
+    description: "Discontinuous Galerkin implementation of the acoustic wave equation and other conservation laws."
     language: C++, MPI
     code: https://github.com/arotem3/waveDG
   
