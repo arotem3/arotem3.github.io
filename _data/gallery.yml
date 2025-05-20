@@ -1,0 +1,2 @@
+- file: penrose.png
+  caption: "Simulation of the Helmholtz equation inside the Penrose uniluminable room, rotated into 3D. Simulation via SIPGD in mfem + WaveHoltz."

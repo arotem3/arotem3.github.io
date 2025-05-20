@@ -90,6 +90,11 @@
         </a>
         {% endif %}
         </div>
+
+        <div class="button-container">
+          <a href="/gallery/" class="gallery-button">Gallery</a>
+        </div>
+
         <br>
 
       </header>
@@ -121,3 +126,26 @@
     {% endif %}
   </body>
 </html>
+
+<style>
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gallery-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  background-color: #007acc;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+  background-color: #005fa3;
+}
+</style>

@@ -6,9 +6,9 @@ main:
     image: ./assets/img/wave_guide.pdf
     notes: preprint
     code:
-      - label: "Finite Difference"
+      - label: "FD code"
         url: https://github.com/arotem3/FDWaveHoltz.git
-      - label: "Discontinuous Galerkin"
+      - label: "DG code"
         url: https://github.com/arotem3/waveDG.git
 
   - title: "A Domain Decomposition Approach to Accelerate Simulations of Structure Preserving Nematic Liquid Crystal Models"
