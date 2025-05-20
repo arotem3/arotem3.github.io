@@ -10,6 +10,8 @@ I earned both my B.S. and M.S. in Applied Mathematics and Statistics from the Co
 
 I have contributed to the [MFEM](https://mfem.org) finite element library, where I implemented a matrix-free interior penalty DG diffusion operator optimized for multi-GPU computing. In addition to my research at Virginia Tech, I collaborate with researchers at Lawrence Livermore National Laboratory on the [GenDiL](https://github.com/GenDiL/GenDiL) (Generalized Discretization Library) project, which focuses on flexible, high-performance implementations of finite element methods in arbitrary dimensions. This collaboration began during a research internship at [LLNL](https://www.llnl.gov) and continues to support the development of cutting-edge, high-dimensional simulation tools.
 
+Outside of research, I enjoy running, hiking, and traveling — not just to conferences 😉. I'm an avid reader of fantasy novels and a fan of horror movies. I value curiosity and creativity both in and out of academic work.
+
 ## Research Interests
 
 - **Numerical PDEs:** finite element methods, finite difference methods, WaveHoltz, domain decomposition.
