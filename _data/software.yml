@@ -17,3 +17,19 @@ main:
     language: C++, CUDA
     code: https://github.com/mfem/mfem
     notes: Contributor (implemented matrix-free SIPDG Diffusion operator)
+
+  - title: "WaveDG"
+    description: "Discontinuous Galerkin implementation of the acoustic wave equation."
+    language: C++, MPI
+    code: https://github.com/arotem3/waveDG
+  
+  - title: "TensorView"
+    description: "TensorView is a single header template library defining several classes used to structure contiguous arrays into tensor-like objects (like numpy's ndarray) whose rank (aka dimension or order) is known at compile time."
+    language: C++
+    code: https://github.com/arotem3/TensorView
+
+  - title: "Numerics"
+    description: "A collection of numerical methods ranging from nonlinear optimization, to ODE solvers, to neural networks."
+    language: C++
+    code: https://github.com/arotem3/numerics
+    notes: "I wrote this code as a personal project as an undergrad."
