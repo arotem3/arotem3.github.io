@@ -15,4 +15,4 @@ I am a Ph.D. student at Virginia Tech researching numerical methods for partial 
 
 <!-- {% include_relative _includes/services.md %} -->
 
-{% include_relative _includes/softward.md %}
+{% include_relative _includes/software.md %}
