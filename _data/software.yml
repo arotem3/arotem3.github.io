@@ -5,31 +5,37 @@ main:
     language: C++, CUDA
     code: https://github.com/arotem3/CuDDHelmholtz
     notes: 3D solver in progress.
+    image: /assets/img/ddh.png
 
   - title: "GenDiL"
     description: "GenDiL is a header-only C++ library providing flexible and efficient discretization tools for partial differential equations (PDEs) through a generic programming approach. The library aims to bring advanced mathematical concepts into practical use, leveraging modern C++ for high-performance scientific computing."
     language: C++, CUDA
     code: https://github.com/GenDiL/GenDiL
     notes: Maintainer
+    image: /assets/img/c++.png
 
   - title: "mfem"
     description: "MFEM is a modular parallel C++ library for finite element methods. Its goal is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to supercomputers."
     language: C++, CUDA
     code: https://github.com/mfem/mfem
+    image: /assets/img/mfem.png
     notes: Contributor (implemented matrix-free SIPDG Diffusion operator)
 
   - title: "WaveDG"
     description: "Discontinuous Galerkin implementation of the acoustic wave equation and other conservation laws."
     language: C++, MPI
     code: https://github.com/arotem3/waveDG
+    image: /assets/img/advec_final.png
   
   - title: "TensorView"
     description: "TensorView is a single header template library defining several classes used to structure contiguous arrays into tensor-like objects (like numpy's ndarray) whose rank (aka dimension or order) is known at compile time."
     language: C++
     code: https://github.com/arotem3/TensorView
+    image: /assets/img/c++.png
 
   - title: "Numerics"
     description: "A collection of numerical methods ranging from nonlinear optimization, to ODE solvers, to neural networks."
     language: C++
     code: https://github.com/arotem3/numerics
     notes: "I wrote this code as a personal project as an undergrad."
+    image: /assets/img/c++.png

@@ -1,6 +1,6 @@
 <h2 id="software-projects" style="margin: 2px 0px -15px;">Research Software Projects</h2>
 
-<div class="projects">
+<div class="publications">
 <ol class="bibliography">
 
 {% for link in site.data.software.main %}

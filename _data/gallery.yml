@@ -1,2 +1,29 @@
 - file: penrose.png
-  caption: "Simulation of the Helmholtz equation inside the Penrose uniluminable room, rotated into 3D. Simulation via SIPGD in mfem + WaveHoltz."
+  caption: "Simulation of the Helmholtz equation inside the Penrose unilluminable room, rotated into 3D. Simulation via SIPGD in mfem + WaveHoltz."
+
+- file: unil-mesh.png
+  caption: "Finite element mesh of the Penrose unilluminable room, rotated into 3D."
+
+- file: unil-center.jpeg
+  caption: Simulation of the Helmholtz equation inside the Penrose unilluminable room. Source placed in the center leads to illumination of the entire room. Simulation via SIPGD in mfem + WaveHoltz.
+
+- file: unil-corner.jpeg
+  caption: Simulation of the Helmholtz equation inside the Penrose unilluminable room. Source placed in a corner leads to unilluminable property. Simulation via SIPGD in mfem + WaveHoltz.
+
+- file: wave_guide.png
+  caption: "High frequency simulation of the Helmholtz equation in a (vertical) waveguide with a point source. Simulation via Finite Difference method + WaveHoltz."
+
+- file: ddh.png
+  caption: "High frequency scattering of two point sources by a circular cylinder. Simulation via CuDDHelmholtz with ~5 million degrees of freedom."
+
+- file: ddh3d.png
+  caption: "Scattering of two point sources by a sphere. Simulation via CuDDHelmholtz with ~4 million degrees of freedom."
+
+- file: advec.png
+  caption: "16 snapshots of advection by a vortex in a 2D domain. Simulation via WaveDG."
+
+- file: INS-POD.png
+  caption: "Flow around a cylinder. Mean flow and POD modes of the incompressible Navier-Stokes equations in a 2D channel. Simulation via WaveDG."
+
+- file: cats.jpg
+  caption: "My cats: Oven (left) and Maple (right)."

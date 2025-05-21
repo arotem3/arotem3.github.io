@@ -8,7 +8,7 @@ I am a Ph.D. student in the Department of Mathematics at Virginia Tech, advised 
 
 I earned both my B.S. and M.S. in Applied Mathematics and Statistics from the Colorado School of Mines. During that time, I worked on a project using machine learning to enhance the value of hyperspectral data in geosciences, bridging lab-based and field data collection techniques. This experience deepened my interest in combining applied mathematics with real-world applications.
 
-I have contributed to the [MFEM](https://mfem.org) finite element library, where I implemented a matrix-free interior penalty DG diffusion operator optimized for multi-GPU computing. In addition to my research at Virginia Tech, I collaborate with researchers at Lawrence Livermore National Laboratory on the [GenDiL](https://github.com/GenDiL/GenDiL) (Generalized Discretization Library) project, which focuses on flexible, high-performance implementations of finite element methods in arbitrary dimensions. This collaboration began during a research internship at [LLNL](https://www.llnl.gov) and continues to support the development of cutting-edge, high-dimensional simulation tools.
+I have contributed to the [MFEM](https://mfem.org) finite element library, where I implemented a matrix-free interior penalty DG diffusion operator optimized for multi-GPU computing. In addition to my research at Virginia Tech, I collaborate with researchers at Lawrence Livermore National Laboratory on the [GenDiL](https://github.com/GenDiL/GenDiL) (Generalized Discretization Library) project, which focuses on flexible, high-performance implementations of finite element methods in arbitrary dimensions. This collaboration began during a research internship at [LLNL](https://www.llnl.gov).
 
 Outside of research, I enjoy running, hiking, and traveling — not just to conferences 😉. I'm an avid reader of fantasy novels and a fan of horror movies. I value curiosity and creativity both in and out of academic work.
 
@@ -24,7 +24,5 @@ Outside of research, I enjoy running, hiking, and traveling — not just to conf
 - **Low Rank Solvers:** Developing sub-linear numerical methods for PDEs in low-rank format (SVD and tensor-decompositions).
 
 {% include_relative _includes/publications.md %}
-
-<!-- {% include_relative _includes/services.md %} -->
 
 {% include_relative _includes/software.md %}

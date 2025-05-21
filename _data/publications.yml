@@ -3,7 +3,7 @@ main:
   - title: "Convergence of the Semi-Discrete WaveHoltz Iteration"
     authors: Amit Rotem, Olof Runborg, Daniel Appelö
     pdf: https://arxiv.org/pdf/2407.06929
-    image: ./assets/img/wave_guide.pdf
+    image: /assets/img/wave_guide.png
     notes: preprint
     code:
       - label: "FD code"
@@ -14,9 +14,9 @@ main:
   - title: "A Domain Decomposition Approach to Accelerate Simulations of Structure Preserving Nematic Liquid Crystal Models"
     authors: Sylver Carter, Amit Rotem, Shawn W Walker
     pdf: https://www.sciencedirect.com/science/article/am/pii/S0377025720301038
-    image: ./assets/img/liquid-crystals.jpg
+    image: /assets/img/liquid-crystals.jpg
   
   - title: "Interpretation of Hyperspectral Shortwave Infrared Core Scanning Data Using SEM-Based Automated Mineralogy: a Machine Learning Approach"
     authors: Amit Rotem, Alexander Vidal, Katharina Pfaff, Luis Tenorio, Matthias Chung, Erik Tharalson, Thomas Monecke
     pdf: https://www.mdpi.com/2076-3263/13/7/192
-    image: ./assets/img/hyperspectral.png
+    image: /assets/img/hyperspectral.png
