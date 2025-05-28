@@ -14,10 +14,10 @@ main:
     notes: Maintainer
     image: /assets/img/c++.png
 
-  - title: "mfem"
+  - title: "MFEM"
     description: "MFEM is a modular parallel C++ library for finite element methods. Its goal is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to supercomputers."
     language: C++, CUDA
-    code: https://github.com/mfem/mfem
+    code: https://mfem.org/
     image: /assets/img/mfem.png
     notes: Contributor (implemented matrix-free SIPDG Diffusion operator)
 

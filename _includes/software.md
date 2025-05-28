@@ -16,21 +16,27 @@
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="{{ link.page }}">{{ link.title }}</a></div>
+    <div class="title">
+      {% if link.code %}
+        <a href="{{ link.code }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+      {% else %}
+        {{ link.title }}
+      {% endif %}
+    </div>
     <div class="author">{{ link.description }}</div>
     <div class="periodical"><em>{{ link.context }}</em></div>
     <div class="links">
       {% if link.code %}
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Code</a>
       {% endif %}
       {% if link.docs %}
-      <a href="{{ link.docs }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Docs</a>
+      <a href="{{ link.docs }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Docs</a>
       {% endif %}
       {% if link.demo %}
-      <a href="{{ link.demo }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Demo</a>
+      <a href="{{ link.demo }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Demo</a>
       {% endif %}
       {% if link.page %}
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Project Page</a>
       {% endif %}
       {% if link.notes %}
       <strong><i style="color:#e74d3c">{{ link.notes }}</i></strong>
