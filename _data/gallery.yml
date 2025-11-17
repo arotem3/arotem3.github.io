@@ -25,5 +25,12 @@
 - file: INS-POD.png
   caption: "Flow around a cylinder. Mean flow and POD modes of the incompressible Navier-Stokes equations in a 2D channel. Simulation via WaveDG."
 
+- file: ShearLayer_SVD.png
+  caption: "Unstable double shear layer flow. Adaptive low-rank solver with CrossDEIM. The singular values and leading ten singular vectors are visualized."
+
+- file: DoubleVortex.mp4
+  caption: "Corotating vortices. Adaptive low-rank solver with crossDEIM. The singular values and leading singular vectors are visualized."
+  type: video
+
 - file: cats.jpg
   caption: "My cats: Oven (left) and Maple (right)."

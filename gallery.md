@@ -7,10 +7,22 @@ permalink: /gallery/
 <h2>Gallery</h2>
 
 <div class="image-grid">
-  {% for image in site.data.gallery %}
+  {% for item in site.data.gallery %}
     <div class="gallery-item">
-      <img src="{{ '/assets/img/gallery/' | append: image.file }}" alt="Gallery image"
-           onclick="openModal(this)" data-caption="{{ image.caption }}">
+      {% if item.type == 'video' %}
+        <video src="{{ '/assets/img/gallery/' | append: item.file }}" 
+               onclick="openModal(this)" 
+               data-caption="{{ item.caption }}"
+               data-type="video"
+               muted loop playsinline>
+        </video>
+      {% else %}
+        <img src="{{ '/assets/img/gallery/' | append: item.file }}" 
+             alt="Gallery image"
+             onclick="openModal(this)" 
+             data-caption="{{ item.caption }}"
+             data-type="image">
+      {% endif %}
     </div>
   {% endfor %}
 </div>
@@ -21,7 +33,8 @@ permalink: /gallery/
   <div class="modal-inner">
     <div class="modal-inner-content">
       <div class="modal-img-container">
-        <img class="modal-content" id="modal-img" draggable="false" alt="">
+        <img class="modal-content" id="modal-img" draggable="false" alt="" style="display:none;">
+        <video class="modal-content" id="modal-video" controls muted loop playsinline style="display:none;"></video>
       </div>
       <div id="modal-caption" class="modal-caption"></div>
     </div>
@@ -53,6 +66,12 @@ permalink: /gallery/
   width: 100%;
 }
 
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  cursor: pointer;
+}
+
 /* Modal styles */
 .modal {
   position: fixed;
@@ -64,7 +83,7 @@ permalink: /gallery/
   justify-content: center;
   padding: 0;
   box-sizing: border-box;
-  cursor: pointer; /* pointer cursor on overlay */
+  cursor: pointer;
 }
 
 .modal-close {
@@ -141,9 +160,10 @@ permalink: /gallery/
 <script>
 let panzoomInstance = null;
 
-function openModal(img) {
+function openModal(element) {
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-img");
+  const modalVideo = document.getElementById("modal-video");
   const modalCaption = document.getElementById("modal-caption");
 
   modal.style.display = "flex";
@@ -152,21 +172,33 @@ function openModal(img) {
     panzoomInstance.destroy();
     panzoomInstance = null;
   }
-  modalImg.style.transform = "none";
 
-  modalImg.src = img.src;
-  modalCaption.textContent = img.getAttribute("data-caption");
+  const isVideo = element.getAttribute("data-type") === "video";
 
-  modalImg.onload = () => {
-    panzoomInstance = Panzoom(modalImg, {
-      maxScale: 5,
-      minScale: 1,
-      contain: 'outside',
-      cursor: 'grab',
-      disablePanOutside: true,
-    });
-    modalImg.parentElement.addEventListener('wheel', panzoomInstance.zoomWithWheel);
-  };
+  if (isVideo) {
+    modalImg.style.display = "none";
+    modalVideo.style.display = "block";
+    modalVideo.src = element.src;
+    modalVideo.style.transform = "none";
+  } else {
+    modalVideo.style.display = "none";
+    modalImg.style.display = "block";
+    modalImg.src = element.src;
+    modalImg.style.transform = "none";
+
+    modalImg.onload = () => {
+      panzoomInstance = Panzoom(modalImg, {
+        maxScale: 5,
+        minScale: 1,
+        contain: 'outside',
+        cursor: 'grab',
+        disablePanOutside: true,
+      });
+      modalImg.parentElement.addEventListener('wheel', panzoomInstance.zoomWithWheel);
+    };
+  }
+
+  modalCaption.textContent = element.getAttribute("data-caption");
 }
 
 function closeModal() {
@@ -179,16 +211,22 @@ function closeModal() {
   }
 
   const modalImg = document.getElementById("modal-img");
+  const modalVideo = document.getElementById("modal-video");
+  
   modalImg.src = "";
   modalImg.style.transform = "none";
+  modalVideo.pause();
+  modalVideo.src = "";
+  modalVideo.style.transform = "none";
 
   document.getElementById("modal-caption").textContent = "";
 }
 
-// Close modal if clicking anywhere except the image itself
+// Close modal if clicking anywhere except the content itself
 document.getElementById("modal").addEventListener("click", function(e) {
   const modalImg = document.getElementById("modal-img");
-  if (e.target !== modalImg) {
+  const modalVideo = document.getElementById("modal-video");
+  if (e.target !== modalImg && e.target !== modalVideo) {
     closeModal();
   }
 });
@@ -203,3 +241,4 @@ document.addEventListener("keydown", function(e) {
   }
 });
 </script>
+
