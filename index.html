@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Amit Rotem — Ph.D. student in Mathematics at Virginia Tech. Research in numerical PDEs and high-performance computing." />
+  <title>Amit Rotem</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link rel="icon" href="assets/img/github.svg" type="image/svg+xml" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Amit Rotem</a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+        <a href="gallery.html" class="nav-cta">Gallery</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Ph.D. Student &middot; Virginia Tech, Dept. of Mathematics</p>
+
+        <h1 class="hero-name">Amit<br>Rotem.</h1>
+
+        <div class="hero-rule"></div>
+
+        <p class="hero-tagline">
+          Numerical methods for partial differential equations
+          and high-performance computing. Building scalable
+          solvers for wave propagation and beyond.
+        </p>
+
+        <div class="hero-links">
+          <a class="hero-icon-link" href="https://scholar.google.com/citations?user=SVTKX7IAAAAJ&hl=en"
+            title="Google Scholar" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a class="hero-icon-link" href="https://github.com/arotem3" title="GitHub" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="hero-icon-link" href="assets/files/RotemResume.pdf" title="Download CV" target="_blank"
+            rel="noopener">
+            <i class="far fa-file-pdf"></i>
+          </a>
+          <a class="hero-icon-link" href="mailto:arotem@vt.edu" title="arotem@vt.edu">
+            <i class="far fa-envelope"></i>
+          </a>
+
+          <a class="hero-gallery-link" href="gallery.html">
+            <i class="far fa-images"></i>
+            Gallery
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="assets/img/amit.jpg" alt="Amit Rotem" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">Background</h2>
+      <div class="section-rule"></div>
+
+      <div class="about-body">
+        <p>
+          I am a Ph.D. student in the Department of Mathematics at Virginia Tech, advised by Daniel Appel&ouml;.
+          My research focuses on numerical methods for partial differential equations (PDEs) with an emphasis on
+          high-performance computing (HPC). My work lies at the intersection of algorithmic theory and scalable
+          implementation. A central focus of my research is the development of the <strong>WaveHoltz</strong>
+          method for solving frequency-domain wave propagation problems. This includes a general theory establishing
+          convergence in the semi-discrete and fully discrete settings, alongside the design of computational strategies
+          that are efficient on modern parallel
+          architectures.
+        </p>
+        <p>
+          I earned both my B.S. and M.S. in Applied Mathematics and Statistics from the Colorado School of Mines.
+          During that time, I worked on a project using machine learning to enhance the value of hyperspectral data
+          in geosciences, bridging lab-based and field data collection techniques. As a graduate student, I have
+          contributed to the
+          <a href="https://mfem.org" target="_blank" rel="noopener">MFEM</a> finite element library, where I
+          implemented a matrix-free interior penalty DG diffusion operator optimized for multi-GPU computing.
+          In addition to my research at Virginia Tech, I collaborate with researchers at Lawrence Livermore
+          National Laboratory on the
+          <a href="https://github.com/GenDiL/GenDiL" target="_blank" rel="noopener">GenDiL</a>
+          (Generic Discretization Library) project, which focuses on flexible, high-performance implementations
+          of finite element methods in arbitrary dimensions.
+        </p>
+        <p>
+          Outside of research, I enjoy running, hiking, and traveling&mdash;not just to conferences. I&rsquo;m an
+          avid reader of fantasy novels and a fan of horror movies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       RESEARCH
+  ═══════════════════════════════════════════════ -->
+  <section id="research" class="research-section">
+    <div class="container">
+      <p class="section-eyebrow">01 / Research</p>
+      <h2 class="section-title">Interests &amp; Ongoing Work</h2>
+      <div class="section-rule"></div>
+
+      <div class="research-grid">
+        <div class="interest-card">
+          <h3>Numerical PDEs</h3>
+          <p>
+            Finite element and finite difference methods, the WaveHoltz iteration for frequency-domain wave
+            propagation, and domain decomposition methods.
+          </p>
+        </div>
+        <div class="interest-card">
+          <h3>High Performance Computing</h3>
+          <p>
+            GPU and many-core distributed algorithms and implementations in C++. Matrix-free methods
+            optimized for modern massively parallel hardware.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="ongoing-heading">Ongoing Projects</h3>
+      <ul class="ongoing-list">
+        <li class="ongoing-item">
+          <div>
+            <strong>WaveHoltz HMM</strong>
+            <span>
+              Combining heterogeneous multiscale methods (HMM) with WaveHoltz to efficiently solve
+              frequency-domain homogenization problems with multiscale structure.
+            </span>
+          </div>
+        </li>
+        <li class="ongoing-item">
+          <div>
+            <strong>Domain Decomposition on GPUs</strong>
+            <span>
+              Scalable algorithm and implementation of the non-overlapping domain decomposition method
+              for the Helmholtz equation, specialized for massively parallel shared-memory hardware (GPUs).
+            </span>
+          </div>
+        </li>
+        <li class="ongoing-item">
+          <div>
+            <strong>Low Rank Solvers</strong>
+            <span>
+              Sub-linear numerical methods for PDEs in low-rank format using SVD and tensor decompositions
+              (Cross-DEIM).
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       PUBLICATIONS
+  ═══════════════════════════════════════════════ -->
+  <section id="publications" class="pubs-section">
+    <div class="container">
+      <p class="section-eyebrow">02 / Publications</p>
+      <h2 class="section-title">Research Papers</h2>
+      <div class="section-rule"></div>
+
+      <div class="pub-list">
+
+        <!-- 01 -->
+        <div class="pub-card">
+          <img class="pub-image" src="assets/img/wave_guide.png" alt="WaveHoltz waveguide simulation" />
+          <div class="pub-body">
+            <span class="pub-num">01</span>
+            <h3 class="pub-title">Convergence of the Semi-Discrete WaveHoltz Iteration</h3>
+            <p class="pub-authors"><strong>Amit Rotem</strong>, Olof Runborg, Daniel Appel&ouml;</p>
+            <p class="pub-journal">Journal of Computational Physics</p>
+            <div class="pub-links">
+              <a class="link-btn" href="https://doi.org/10.1016/j.jcp.2026.114882" target="_blank" rel="noopener">
+                <i class="fas fa-book-open"></i> Journal
+              </a>
+              <a class="link-btn" href="https://arxiv.org/pdf/2407.06929" target="_blank" rel="noopener">
+                <i class="far fa-file-pdf"></i> Preprint
+              </a>
+              <a class="link-btn" href="https://github.com/arotem3/FDWaveHoltz.git" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> FD Code
+              </a>
+              <a class="link-btn" href="https://github.com/arotem3/waveDG.git" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> DG Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="pub-card">
+          <img class="pub-image" src="assets/img/liquid-crystals.jpg" alt="Nematic liquid crystal simulation" />
+          <div class="pub-body">
+            <span class="pub-num">02</span>
+            <h3 class="pub-title">
+              A Domain Decomposition Approach to Accelerate Simulations of Structure Preserving
+              Nematic Liquid Crystal Models
+            </h3>
+            <p class="pub-authors">Sylver Carter, <strong>Amit Rotem</strong>, Shawn W Walker</p>
+            <div class="pub-links">
+              <a class="link-btn" href="https://www.sciencedirect.com/science/article/am/pii/S0377025720301038"
+                target="_blank" rel="noopener">
+                <i class="fas fa-book-open"></i> Journal
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="pub-card">
+          <img class="pub-image" src="assets/img/hyperspectral.png" alt="Hyperspectral data visualization" />
+          <div class="pub-body">
+            <span class="pub-num">03</span>
+            <h3 class="pub-title">
+              Interpretation of Hyperspectral Shortwave Infrared Core Scanning Data Using
+              SEM-Based Automated Mineralogy: a Machine Learning Approach
+            </h3>
+            <p class="pub-authors">
+              <strong>Amit Rotem</strong>, Alexander Vidal, Katharina Pfaff, Luis Tenorio,
+              Matthias Chung, Erik Tharalson, Thomas Monecke
+            </p>
+            <div class="pub-links">
+              <a class="link-btn" href="https://www.mdpi.com/2076-3263/13/7/192" target="_blank" rel="noopener">
+                <i class="fas fa-book-open"></i> Journal
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       SOFTWARE
+  ═══════════════════════════════════════════════ -->
+  <section id="software" class="software-section">
+    <div class="container">
+      <p class="section-eyebrow">03 / Software</p>
+      <h2 class="section-title">Projects &amp; Contributions</h2>
+      <div class="section-rule"></div>
+
+      <div class="software-grid">
+
+        <a href="https://github.com/arotem3/CuDDHelmholtz" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">CuDDHelmholtz</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            Domain decomposition solver for the Helmholtz equation in two and three dimensions implemented in CUDA.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+              <span class="sw-tag">CUDA</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/GenDiL/GenDiL" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">GenDiL</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            Header-only C++ library providing flexible and efficient PDE discretization tools
+            through a generic programming approach. High-performance FEM in arbitrary dimensions.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+              <span class="sw-tag">CUDA</span>
+            </div>
+            <span class="sw-role">Maintainer</span>
+          </div>
+        </a>
+
+        <a href="https://mfem.org/" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">MFEM</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            Modular parallel C++ library for finite element methods, enabling high-performance
+            scalable FEM research and application development across laptop to supercomputer.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+              <span class="sw-tag">CUDA</span>
+            </div>
+            <span class="sw-role">Contributor</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/arotem3/waveDG" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">WaveDG</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            Discontinuous Galerkin implementation of the acoustic wave equation and other
+            hyperbolic conservation laws.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+              <span class="sw-tag">MPI</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/arotem3/TensorView" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">TensorView</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            Single-header C++ template library for structuring contiguous arrays into
+            compile-time ranked tensor objects, similar to NumPy's ndarray.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/arotem3/numerics" class="sw-card" target="_blank" rel="noopener">
+          <div class="sw-header">
+            <span class="sw-name">Numerics</span>
+            <i class="fas fa-arrow-up-right-from-square sw-arrow"></i>
+          </div>
+          <p class="sw-desc">
+            A collection of numerical methods ranging from nonlinear optimization and ODE solvers
+            to neural networks. Written as a personal undergraduate project.
+          </p>
+          <div class="sw-footer">
+            <div class="sw-tags">
+              <span class="sw-tag">C++</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Amit Rotem</span>
+      <span class="footer-copy">&copy; 2025 &middot; arotem@vt.edu</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
