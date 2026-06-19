@@ -227,6 +227,18 @@
             <h3 class="pub-title">Convergence of the Semi-Discrete WaveHoltz Iteration</h3>
             <p class="pub-authors"><strong>Amit Rotem</strong>, Olof Runborg, Daniel Appel&ouml;</p>
             <p class="pub-journal">Journal of Computational Physics</p>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>
+                Solving the Helmholtz equation with iterative methods is challenging because of its indefinite nature
+                and highly oscillatory solutions. The WaveHoltz algorithm mitigates the difficulties of solving the
+                Helmholtz equation by repeatedly solving the wave equation over short periods in time. In this paper, we
+                prove that for stable semi-discretizations of the wave equation, the WaveHoltz iteration converges to an
+                approximate solution of the corresponding frequency-domain problem, provided one exists. We present
+                numerical examples in one and two dimensions using finite difference and discontinuous Galerkin
+                discretizations illustrating these convergence results.
+              </p>
+            </details>
             <div class="pub-links">
               <a class="link-btn" href="https://doi.org/10.1016/j.jcp.2026.114882" target="_blank" rel="noopener">
                 <i class="fas fa-book-open"></i> Journal
@@ -251,6 +263,31 @@
             <span class="pub-num">02</span>
             <h3 class="pub-title">Efficient Domain Decomposition for the Helmholtz Equation on GPUs</h3>
             <p class="pub-authors"><strong>Amit Rotem</strong></p>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>
+                The Helmholtz equation governs wave propagation in acoustics,
+                electromagnetics, and seismology, but its indefinite nature makes it difficult
+                to solve with iterative methods. Domain decomposition methods are a natural fit
+                for massively parallel architectures, yet mapping efficient Helmholtz solvers
+                onto modern GPUs remains a challenge. We address both with two key
+                contributions: (1) a block-level domain decomposition scheme, in which each
+                subdomain is assigned to a single thread block and all solves run concurrently
+                in a single kernel launch, and (2) WaveHoltz as the subdomain solver. WaveHoltz
+                is a fixed-point iteration that is uniquely well-suited to the GPU execution
+                model due to its minimal memory footprint and no reduction operations.
+                Together, these eliminate device-level synchronizations and replace global
+                memory traffic with shared memory and register-level operations, keeping
+                subdomain data largely resident in L1 and L2 cache. We explore two threading
+                strategies: one degree of freedom per thread for small subdomains, and multiple
+                degrees of freedom per thread for larger ones. Benchmarks of our CUDA based
+                implementation on a NVIDIA A100 show that WaveHoltz achieves 2x-25x speedup
+                over MINRES, with the advantage growing with subdomain size. Crucially,
+                evaluating the subdomain solver in single rather than double precision yields
+                an additional 2x-10x speedup--a benefit largely unattainable by MINRES due to
+                loss of Krylov vector orthogonality under reduced precision.
+              </p>
+            </details>
             <div class="pub-links">
               <a class="link-btn" href="#" aria-disabled="true" title="ArXiv link coming soon">
                 <i class="far fa-file-pdf"></i> Preprint
@@ -273,6 +310,20 @@
             </h3>
             <p class="pub-authors">Sylver Carter, <strong>Amit Rotem</strong>, Shawn W Walker</p>
             <p class="pub-journal">Journal of Non-Newtonian Fluid Mechanics</p>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>
+                We present a method for speeding up equilibrium simulations of liquid crystals for
+                two related models that are degenerate with respect to defects: the Ericksen model
+                and the uniaxially constrained Landau-de Gennes model. The degeneracy induces a
+                nonlinear, non-smooth coupling between the two order parameters in both models that
+                makes the discrete problems very stiff to solve. The technique described in this paper
+                uses an alternating Schwarz domain decomposition method that isolates the degenerate
+                region, alleviates some of the stiffness, and is easy to implement. We present numerical
+                results illustrating the speed-up and how it is affected by the size of the subdomains
+                and the number of subiterations used within the degenerate region.
+              </p>
+            </details>
             <div class="pub-links">
               <a class="link-btn" href="https://www.sciencedirect.com/science/article/am/pii/S0377025720301038"
                 target="_blank" rel="noopener">
@@ -296,6 +347,25 @@
               Matthias Chung, Erik Tharalson, Thomas Monecke
             </p>
             <p class="pub-journal">Geosciences</p>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>
+                Understanding the mineralogy and geochemistry of the subsurface is key when assessing
+                and exploring for mineral deposits. To achieve this goal, rapid acquisition and accurate
+                interpretation of drill core data are essential. Hyperspectral shortwave infrared imaging
+                is a rapid and non-destructive analytical method widely used in the minerals industry to
+                map minerals with diagnostic features in core samples. In this paper, we present an
+                automated method to interpret hyperspectral shortwave infrared data on drill core to
+                decipher major felsic rock-forming minerals using supervised machine learning techniques
+                for processing, masking, and extracting mineralogical and textural information. This
+                study utilizes a co-registered training dataset that integrates hyperspectral data with
+                quantitative scanning electron microscopy data instead of spectrum matching using a
+                spectral library. Our methodology overcomes previous limitations in hyperspectral data
+                interpretation for the full mineralogy (i.e., quartz and feldspar) caused by the need to
+                identify spectral features of minerals; in particular, it detects the presence of minerals
+                that are considered invisible in traditional shortwave infrared hyperspectral analysis.
+              </p>
+            </details>
             <div class="pub-links">
               <a class="link-btn" href="https://www.mdpi.com/2076-3263/13/7/192" target="_blank" rel="noopener">
                 <i class="fas fa-book-open"></i> Journal
