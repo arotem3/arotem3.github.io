@@ -221,7 +221,9 @@
 
         <!-- 01 -->
         <div class="pub-card">
-          <img class="pub-image" src="assets/img/wave_guide.png" alt="WaveHoltz waveguide simulation" />
+          <a class="pub-image-link" href="assets/img/wave_guide.png" data-caption="Convergence of the Semi-Discrete WaveHoltz Iteration" aria-label="View cover image for Convergence of the Semi-Discrete WaveHoltz Iteration">
+            <img class="pub-image" src="assets/img/wave_guide.png" alt="WaveHoltz waveguide simulation" />
+          </a>
           <div class="pub-body">
             <span class="pub-num">01</span>
             <h3 class="pub-title">Convergence of the Semi-Discrete WaveHoltz Iteration</h3>
@@ -258,7 +260,9 @@
 
         <!-- 02 -->
         <div class="pub-card">
-          <img class="pub-image" src="assets/img/CuDDH.png" alt="GPU domain decomposition for Helmholtz equation" />
+          <a class="pub-image-link" href="assets/img/CuDDH.png" data-caption="Efficient Domain Decomposition for the Helmholtz Equation on GPUs" aria-label="View cover image for Efficient Domain Decomposition for the Helmholtz Equation on GPUs">
+            <img class="pub-image" src="assets/img/CuDDH.png" alt="GPU domain decomposition for Helmholtz equation" />
+          </a>
           <div class="pub-body">
             <span class="pub-num">02</span>
             <h3 class="pub-title">Efficient Domain Decomposition for the Helmholtz Equation on GPUs</h3>
@@ -301,7 +305,9 @@
 
         <!-- 03 -->
         <div class="pub-card">
-          <img class="pub-image" src="assets/img/liquid-crystals.jpg" alt="Nematic liquid crystal simulation" />
+          <a class="pub-image-link" href="assets/img/liquid-crystals.jpg" data-caption="A Domain Decomposition Approach to Accelerate Simulations of Structure Preserving Nematic Liquid Crystal Models" aria-label="View cover image for A Domain Decomposition Approach to Accelerate Simulations of Structure Preserving Nematic Liquid Crystal Models">
+            <img class="pub-image" src="assets/img/liquid-crystals.jpg" alt="Nematic liquid crystal simulation" />
+          </a>
           <div class="pub-body">
             <span class="pub-num">03</span>
             <h3 class="pub-title">
@@ -335,7 +341,9 @@
 
         <!-- 04 -->
         <div class="pub-card">
-          <img class="pub-image" src="assets/img/hyperspectral.png" alt="Hyperspectral data visualization" />
+          <a class="pub-image-link" href="assets/img/hyperspectral.png" data-caption="Interpretation of Hyperspectral Shortwave Infrared Core Scanning Data Using SEM-Based Automated Mineralogy: a Machine Learning Approach" aria-label="View cover image for Interpretation of Hyperspectral Shortwave Infrared Core Scanning Data Using SEM-Based Automated Mineralogy: a Machine Learning Approach">
+            <img class="pub-image" src="assets/img/hyperspectral.png" alt="Hyperspectral data visualization" />
+          </a>
           <div class="pub-body">
             <span class="pub-num">04</span>
             <h3 class="pub-title">
@@ -505,6 +513,17 @@
       <span class="footer-copy">&copy; 2025 &middot; arotem@vt.edu</span>
     </div>
   </footer>
+
+  <div class="pub-lightbox" id="pub-lightbox" aria-hidden="true">
+    <button class="pub-lightbox-close" id="pub-lightbox-close" type="button" aria-label="Close image viewer">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="pub-lightbox-backdrop" id="pub-lightbox-backdrop"></div>
+    <figure class="pub-lightbox-panel" role="dialog" aria-modal="true" aria-label="Publication image viewer">
+      <img class="pub-lightbox-image" id="pub-lightbox-image" alt="" />
+      <figcaption class="pub-lightbox-caption" id="pub-lightbox-caption"></figcaption>
+    </figure>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
